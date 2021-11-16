@@ -1,0 +1,8 @@
+sylius:
+    ui:
+    color: Kolor
+    colors:
+        placeholder: Wybierz kolor
+        RED: Czerwony
+        GREEN: Zielony
+        BLUE: Niebieski

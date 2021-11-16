@@ -33,9 +33,17 @@ $ php composer.phar create-project sylius/sylius-standard project
 $ cd project
 $ yarn install
 $ yarn build
+$ ./bin/console cache:clear
+$ ./bin/console doctrine:schema:update --force
 $ php bin/console sylius:install
 $ php bin/console server:start
 $ open http://localhost:8000/
+```
+
+If you get error running fixtures, then you need to use
+```bash
+$ ./bin/console cache:clear
+$ ./bin/console doctrine:schema:update --force
 ```
 
 Troubleshooting

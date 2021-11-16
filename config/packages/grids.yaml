@@ -1,0 +1,7 @@
+sylius_grid:
+    grids:
+        sylius_admin_product:
+            fields:
+                color:
+                    type: string
+                    label: sylius.color
