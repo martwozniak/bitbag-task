@@ -22,12 +22,12 @@ class ProductTypeExtension extends AbstractTypeExtension
     {
         $builder->add('color', ChoiceType::class, [
            'choices' => [
-            'red' => Product::COLOR_RED,
-            'green' => Product::COLOR_GREEN,
-            'blue' => Product::COLOR_BLUE,
+            'sylius.colors.RED' => Product::COLOR_RED,
+            'sylius.colors.GREEN' => Product::COLOR_GREEN,
+            'sylius.colors.BLUE' => Product::COLOR_BLUE,
            ],
-            'label' => 'Color',
-            'placeholder' => 'Choose one color',
+            'label' => 'sylius.color',
+            'placeholder' => 'sylius.colors.placeholder',
             'required' => false,
         ]);
     }
