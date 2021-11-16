@@ -28,14 +28,15 @@ Installation
 ------------
 
 ```bash
-$ wget http://getcomposer.org/composer.phar
-$ php composer.phar create-project sylius/sylius-standard project
-$ cd project
+$ composer install
 $ yarn install
 $ yarn build
 $ ./bin/console cache:clear
-$ ./bin/console doctrine:schema:update --force
+$ ./bin/console doctrine:database:create
 $ php bin/console sylius:install
+$ ./bin/console doctrine:schema:update --force
+$ php bin/console sylius:install:fixtures
+$ php bin/console sylius:install:setup
 $ php bin/console server:start
 $ open http://localhost:8000/
 ```
